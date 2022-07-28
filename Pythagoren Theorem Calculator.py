@@ -1,8 +1,3 @@
-"""
-Adnan Hossain
-Student Project
-Project Title: Pythagoren Theorem Calculator
-"""
 import math
 
 print("This is a Pythagorean Theorem calculator! Use this program to calculate your triangle sides.")
