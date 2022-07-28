@@ -1,27 +1,21 @@
-#### ---- SETUP ---- ####
-
-## -- Library -- ##
-
-import random
-
-## -- User input -- ##
-print("I'm thinking of a random number.")
-guess = input("Guess whether it's even or odd! ")
-answer = "I don't know"
-number = 0
-
-#### ---- NUMBER CHOICE ---- ####
-number = random.randint(1,10)
-if number % 2 == 0:
-     answer = "even"
-else:
-     answer = "odd"   
+#### ---- VARIABLE SETUP ---- ####
+print("Case 1")
+horses = 6
+horse_shoes = 4
+#### ---- HORSESHOE CALCULATION ---- ####
+horse_shoes = horses * horse_shoes
 
 
-#### ---- OUTPUT ---- ####
+#### ---- OUTPUT RESULTS ---- ####
+print(horse_shoes)
 
-if answer == guess:
-    print("You guessed right!")
-else:
-    print("No, that wasn't it. Sorry.")
-print("The number was " + str(number))
+#### ---- VARIABLE SETUP ---- ####
+print("Case 2")
+horses = 10
+horse_shoes = 4
+#### ---- HORSESHOE CALCULATION ---- ####
+horse_shoes = horses * horse_shoes
+
+
+#### ---- OUTPUT RESULTS ---- ####
+print(horse_shoes)
