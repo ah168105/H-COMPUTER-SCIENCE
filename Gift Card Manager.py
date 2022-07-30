@@ -59,7 +59,7 @@ while True:
 
 
     ## -- Adding a new card -- ##
-if user == "buy":
+    if user == "buy":
 
     buy_card = input("Enter a code for the new card: ")
     valid.insert(0, buy_card)
