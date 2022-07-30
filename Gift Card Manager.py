@@ -1,5 +1,3 @@
-#### ---- SETUP ---- ####
-
 ## -- Starting cards -- ##
 valid = ["ASDF", "1234", "QWER", "ZXCV", "0000"]
 amount = [100, 50, 75, 20, 50]
@@ -23,7 +21,7 @@ while True:
     ## -- Using a card -- ##
     if user == "use":
         card_use = input("Enter the code of the card you want to use: ")
-
+        
 
         ## -- Code check -- ##
         while card_use not in valid:
@@ -54,25 +52,18 @@ while True:
             del valid[valid.index(card_use)]
             print(str(card_use) + " has been removed!")
 
-        ## -- Invalid input -- ##
-
-
-
     ## -- Adding a new card -- ##
     if user == "buy":
 
-        buy_card = input("Enter a code for the new card: ")
-        valid.insert(0, buy_card)
-        amount.append(100)
-        card_amount = 100
-        print("A new card has been added with code " + str(buy_card) +" and a balance of $" + str(card_amount))
+        card_buy = input("Enter a code for the new card: ")
+        card_amount = int(input("Enter the amount of money for the new card: "))
             ## -- Code check -- ##
-        while buy_card in valid:
+        while card_buy in valid:
             print("invalid")
-            buy_card = input("Enter a code for the new card: ")
+            card_buy = input("Enter a code for the new card: ")
 
 
         ## -- Adding card -- ##
-    valid.append(buy_card)
-    amount.append(100)
-    print(str(buy_card) + " has been added with a balance of $100.")
+        valid.append(card_buy)
+        amount.append(card_amount)
+        print(str(card_buy) + " has been added with a balance of $" + str(card_amount) + " successfully.")
