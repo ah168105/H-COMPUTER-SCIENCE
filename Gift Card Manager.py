@@ -61,15 +61,15 @@ while True:
     ## -- Adding a new card -- ##
     if user == "buy":
 
-    buy_card = input("Enter a code for the new card: ")
-    valid.insert(0, buy_card)
-    amount.append(100)
-    card_amount = 100
-    print("A new card has been added with code " + str(buy_card) +" and a balance of $" + str(card_amount))
-        ## -- Code check -- ##
-    while buy_card in valid:
-        print("invalid")
         buy_card = input("Enter a code for the new card: ")
+        valid.insert(0, buy_card)
+        amount.append(100)
+        card_amount = 100
+        print("A new card has been added with code " + str(buy_card) +" and a balance of $" + str(card_amount))
+            ## -- Code check -- ##
+        while buy_card in valid:
+            print("invalid")
+            buy_card = input("Enter a code for the new card: ")
 
 
         ## -- Adding card -- ##
